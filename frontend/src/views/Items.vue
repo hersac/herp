@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>Home</h2>
+    <h2>Items</h2>
   </div>
 </template>
+<script setup lang="ts">
 
-<script lang="ts" setup>
 </script>

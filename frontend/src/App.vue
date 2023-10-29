@@ -1,11 +1,17 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <div>
+        <NavBarComponent />
+      </div>
+      <div>
+        <router-view/>
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue'
+import NavBarComponent from "@/components/NavBarComponent.vue";
+
 </script>
