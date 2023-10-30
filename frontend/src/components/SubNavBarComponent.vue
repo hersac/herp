@@ -2,10 +2,10 @@
   <div>
     <v-toolbar class='d-flex justify-center'>
       <v-toolbar-title>{{ titleSubComponent }}</v-toolbar-title>
-      <div v-for="(title, index) in subTitles" :key="index">
+      <div v-for="(subtitle, index) in subTitlesComponent" :key="index">
           <BtnComponent
-          :title="title.name"
-          :route="title.route"
+          :title="subtitle.name"
+          :route="subtitle.route"
           />
       </div>
     </v-toolbar>
@@ -17,13 +17,18 @@ import BtnComponent from "../components/BtnComponent.vue";
 import { TitlesMenu } from '../services/models/TitlesMenu';
 
 const props = defineProps({
-  title: String,
-  subTitles: Array<TitlesMenu>
+  titlesecondnav: String,
+  subtitles: Array<Array<TitlesMenu>>
 });
 
-const subTitlesComponent = ref<TitlesMenu[] | undefined>([]);
+const titleSubComponent = ref<String | undefined>('');
+const subTitlesComponent = ref<any[] | undefined>([]);
 
-const titleSubComponent = props.title;
-subTitlesComponent.value = props.subTitles;
+titleSubComponent.value = props.titlesecondnav;
+subTitlesComponent.value = props.subtitles;
+
+subTitlesComponent.value?.forEach(e =>{
+  console.log(e.name);
+});
 
 </script>

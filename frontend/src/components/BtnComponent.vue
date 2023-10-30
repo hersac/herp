@@ -1,7 +1,7 @@
 <template>
   <div>
     <router-link :to="routeComponent">
-      <v-btn :class="classComponent" @click="functionWithParam($event)">{{ titleComponent }}</v-btn>
+      <v-btn :class="classComponent" @click="emits('get-click')">{{ titleComponent }}</v-btn>
     </router-link>
   </div>
 </template>
@@ -19,10 +19,6 @@ const emits = defineEmits([
 
 const classComponent = props.class;
 const titleComponent = props.title;
-const routeComponent = props.route;
-
-const functionWithParam = (param: any)=>{
-  emits('get-click', param);
-};
+const routeComponent: any = props.route;
 
 </script>
