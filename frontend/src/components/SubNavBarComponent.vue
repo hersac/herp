@@ -20,8 +20,4 @@ const props = defineProps({
   subtitles: Array<any>
 });
 
-const subTitles = ref<any[] | undefined>([]);
-subTitles.value = props.subtitles;
-console.log(subTitles.value);
-
 </script>
