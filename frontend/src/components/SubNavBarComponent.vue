@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-toolbar class='d-flex justify-center'>
-      <v-toolbar-title>{{ titleSubComponent }}</v-toolbar-title>
-      <div v-for="(subtitle, index) in subTitlesComponent" :key="index">
+      <v-toolbar-title>{{ titlesecondnav }}</v-toolbar-title>
+      <div v-for="(subtitle, index) in subtitles" :key="index">
           <BtnComponent
           :title="subtitle.name"
           :route="subtitle.route"
@@ -12,23 +12,16 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 import BtnComponent from "../components/BtnComponent.vue";
-import { TitlesMenu } from '../services/models/TitlesMenu';
 
 const props = defineProps({
   titlesecondnav: String,
-  subtitles: Array<Array<TitlesMenu>>
+  subtitles: Array<any>
 });
 
-const titleSubComponent = ref<String | undefined>('');
-const subTitlesComponent = ref<any[] | undefined>([]);
-
-titleSubComponent.value = props.titlesecondnav;
-subTitlesComponent.value = props.subtitles;
-
-subTitlesComponent.value?.forEach(e =>{
-  console.log(e.name);
-});
+const subTitles = ref<any[] | undefined>([]);
+subTitles.value = props.subtitles;
+console.log(subTitles.value);
 
 </script>

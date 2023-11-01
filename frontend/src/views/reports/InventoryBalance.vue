@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Parametros Bodega</h2>
+    <h2>Balance de inventarios</h2>
   </div>
 </template>
 <script setup lang="ts">

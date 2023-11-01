@@ -18,7 +18,7 @@ const subTitleThirds: TitlesMenu[] = [
 
 const subTitleItems: TitlesMenu[] = [
   new TitlesMenu("Gestión ítems", "/items/itemManagement"),
-  new TitlesMenu("Cotización", "/items/quote"),
+  new TitlesMenu("Cotización", "/items/quotation"),
   new TitlesMenu("Gestión ítems", "/items/salesPrices"),
 ];
 
@@ -45,9 +45,9 @@ const subTitleInventary: TitlesMenu[] = [
 
 const subTitleQueriesReports: TitlesMenu[] = [
   new TitlesMenu("Existencias a la fecha", "/reports/stockDate"),
-  new TitlesMenu("Existencias a un corte", "/reports/CutOffDate"),
+  new TitlesMenu("Existencias a un corte", "/reports/cutOffDate"),
   new TitlesMenu("Movimientos de inventarios", "/reports/inventoryMove"),
-  new TitlesMenu("Reporte de instalación", "/reports/intallationReport"),
+  new TitlesMenu("Reporte de instalación", "/reports/installationReport"),
   new TitlesMenu("Reporte de bodega", "/reports/wineryReport"),
   new TitlesMenu("Balance de inventarios", "/reports/inventaryBalance")
 ];

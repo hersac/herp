@@ -26,13 +26,12 @@ import SubNavBarComponent from '../components/SubNavBarComponent.vue';
 import principalTitles from '../services/titlesService';
 import { TitlesMenu } from '../services/models/TitlesMenu';
 
-const titles = ref<TitlesMenu[][]>([]);
-const titleSub = ref<string>('');
-const subTitles = ref<TitlesMenu[][]>([]);
-
+const titles = ref<TitlesMenu[] | undefined>([]);
+const titleSub = ref<string>();
+const subTitles = ref<Object[] | undefined | any>([]);
 titles.value = principalTitles;
 
-const getSubMenu = (title: string, submenu: TitlesMenu[][]) => {
+const getSubMenu = (title: string, submenu: Object[]) => {
   titleSub.value = title;
   subTitles.value = submenu;
 };

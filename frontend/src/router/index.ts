@@ -11,27 +11,27 @@ const routes = [
     component: () => import('@/views/Masters.vue'),
     children: [
       {
-        path: "/company",
+        path: "company",
         component: () => import('@/views/masters/Company.vue')
       },
       {
-        path: "/accounts",
+        path: "accounts",
         component: () => import('@/views/masters/Accounts.vue')
       },
       {
-        path: "/documents",
+        path: "documents",
         component: () => import('@/views/masters/Documents.vue')
       },
       {
-        path: "/installation",
+        path: "installation",
         component: () => import('@/views/masters/Installation.vue')
       },
       {
-        path: "/location",
+        path: "location",
         component: () => import('@/views/masters/Location.vue')
       },
       {
-        path: "/winary",
+        path: "winary",
         component: () => import('@/views/masters/Winary.vue')
       },
     ]
@@ -41,19 +41,19 @@ const routes = [
     component: () => import('@/views/Thirds.vue'),
     children: [
       {
-        path: "/thirdsManagement",
+        path: "thirdsManagement",
         component: () => import('@/views/thirds/ThirdsManagement.vue')
       },
       {
-        path: "/clients",
+        path: "clients",
         component: () => import('@/views/thirds/Clients.vue')
       },
       {
-        path: "/providers",
+        path: "providers",
         component: () => import('@/views/thirds/Providers.vue')
       },
       {
-        path: "/officials",
+        path: "officials",
         component: () => import('@/views/thirds/Officials.vue')
       }
     ]
@@ -63,15 +63,15 @@ const routes = [
     component: () => import('@/views/Items.vue'),
     children: [
       {
-        path: '/itemManagement',
+        path: 'itemManagement',
         component: () => import('@/views/items/ItemManagement.vue'),
       },
       {
-        path: '/quote',
-        component: () => import('@/views/items/Quote.vue'),
+        path: 'quotation',
+        component: () => import('@/views/items/Quotation.vue'),
       },
       {
-        path: '/salesPrices',
+        path: 'salesPrices',
         component: () => import('@/views/items/SalesPrices.vue'),
       },
     ]
@@ -81,23 +81,23 @@ const routes = [
     component: () => import('@/views/Buy.vue'),
     children: [
       {
-        path: '/supplierInvoice',
+        path: 'supplierInvoice',
         component: () => import('@/views/buy/SupplierInvoice.vue'),
       },
       {
-        path: '/request',
+        path: 'request',
         component: () => import('@/views/buy/Request.vue'),
       },
       {
-        path: '/wish',
+        path: 'wish',
         component: () => import('@/views/buy/Wish.vue'),
       },
       {
-        path: '/order',
+        path: 'order',
         component: () => import('@/views/buy/Order.vue'),
       },
       {
-        path: '/entranceWinary',
+        path: 'entranceWinary',
         component: () => import('@/views/buy/EntranceWinery.vue'),
       },
     ]
@@ -107,19 +107,19 @@ const routes = [
     component: () => import('@/views/Sale.vue'),
     children: [
       {
-        path: '/saleInvoice',
+        path: 'saleInvoice',
         component: () => import('@/views/sale/SaleInvoice.vue'),
       },
       {
-        path: '/creditNote',
+        path: 'creditNote',
         component: () => import('@/views/sale/CreditNote.vue'),
       },
       {
-        path: '/debiNote',
+        path: 'debiNote',
         component: () => import('@/views/sale/DebitNote.vue'),
       },
       {
-        path: '/expend',
+        path: 'expend',
         component: () => import('@/views/sale/Expend.vue'),
       },
     ]
@@ -129,17 +129,47 @@ const routes = [
     component: () => import('@/views/Inventary.vue'),
     children: [
       {
-        path: '/directEntry',
+        path: 'directEntry',
         component: () => import('@/views/inventary/DirectEntry.vue'),
       },
       {
-        path: '/directRemove',
+        path: 'directRemove',
         component: () => import('@/views/inventary/DirectRemove.vue'),
       },
       {
-        path: '/transfers',
+        path: 'transfers',
         component: () => import('@/views/inventary/Transfers.vue'),
       }
+    ]
+  },
+  {
+    path: '/reports',
+    component: () => import('@/views/Reports.vue'),
+    children: [
+      {
+        path: 'stockDate',
+        component: () => import('@/views/reports/StockDate.vue'),
+      },
+      {
+        path: 'cuteOffDate',
+        component: () => import('@/views/reports/CuteOffDate.vue'),
+      },
+      {
+        path: 'inventaryMove',
+        component: () => import('@/views/reports/InventoryMove.vue'),
+      },
+      {
+        path: 'installationReport',
+        component: () => import('@/views/reports/InstallationReport.vue'),
+      },
+      {
+        path: 'wineryReport',
+        component: () => import('@/views/reports/WineryReport.vue'),
+      },
+      {
+        path: 'inventaryBalance',
+        component: () => import('@/views/reports/InventoryBalance.vue'),
+      },
     ]
   },
   {

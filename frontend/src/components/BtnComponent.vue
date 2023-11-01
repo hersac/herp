@@ -6,6 +6,12 @@
   </div>
 </template>
 <script setup lang="ts">
+import { ref } from 'vue';
+
+
+const classComponent = ref<string>();
+const titleComponent = ref<string>();
+const routeComponent = ref<string | undefined>();
 
 const props = defineProps({
   class: String,
@@ -17,8 +23,8 @@ const emits = defineEmits([
   "get-click"
 ])
 
-const classComponent = props.class;
-const titleComponent = props.title;
-const routeComponent: any = props.route;
+classComponent.value = props.class;
+titleComponent.value = props.title;
+routeComponent.value = props.route;
 
 </script>
