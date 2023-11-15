@@ -1,28 +1,28 @@
 import { TitlesMenu } from "./models/TitlesMenu";
 
-const subTitleMasters: TitlesMenu[] = [
+const subTitleMasters = [
   new TitlesMenu("Compañia", "/masters/company"),
   new TitlesMenu("Cuentas", "/masters/accounts"),
   new TitlesMenu("Documentos", "/masters/documents"),
   new TitlesMenu("Instalación", "/masters/installation"),
   new TitlesMenu("Ubicación", "/masters/location"),
-  new TitlesMenu("Bodegas", "/masters/winery"),
+  new TitlesMenu("Bodegas", "/masters/winary"),
 ];
 
-const subTitleThirds: TitlesMenu[] = [
+const subTitleThirds = [
   new TitlesMenu("Gestion terceros", "/thirds/thirdsManagement"),
   new TitlesMenu("Clientes", "/thirds/clients"),
   new TitlesMenu("Proveedores", "/thirds/providers"),
   new TitlesMenu("Funcionarios", "/thirds/officials"),
 ];
 
-const subTitleItems: TitlesMenu[] = [
+const subTitleItems = [
   new TitlesMenu("Gestión ítems", "/items/itemManagement"),
   new TitlesMenu("Cotización", "/items/quotation"),
   new TitlesMenu("Gestión ítems", "/items/salesPrices"),
 ];
 
-const subTitleBuy: TitlesMenu[] = [
+const subTitleBuy = [
   new TitlesMenu("Factura proveedor", "/buy/supplierInvoice"),
   new TitlesMenu("Solicitud", "/buy/request"),
   new TitlesMenu("Pedido", "/buy/wish"),
@@ -30,29 +30,29 @@ const subTitleBuy: TitlesMenu[] = [
   new TitlesMenu("Entrada de almacén", "/buy/entranceWinery"),
 ];
 
-const subTitleSale: TitlesMenu[] = [
+const subTitleSale = [
   new TitlesMenu("Factura de venta", "/sale/saleInvoice"),
   new TitlesMenu("Nota Crédito", "/sale/creditNote"),
   new TitlesMenu("Nota Débito", "/sale/debitNote"),
   new TitlesMenu("Consumo", "/sale/expend"),
 ];
 
-const subTitleInventary: TitlesMenu[] = [
+const subTitleInventary = [
   new TitlesMenu("Entrada directa", "/inventary/directEntry"),
   new TitlesMenu("Salida directa", "/inventary/directRemove"),
   new TitlesMenu("Traslados", "/inventary/transfers")
 ];
 
-const subTitleQueriesReports: TitlesMenu[] = [
+const subTitleQueriesReports = [
   new TitlesMenu("Existencias a la fecha", "/reports/stockDate"),
-  new TitlesMenu("Existencias a un corte", "/reports/cutOffDate"),
+  new TitlesMenu("Existencias a un corte", "/reports/cuteOffDate"),
   new TitlesMenu("Movimientos de inventarios", "/reports/inventoryMove"),
   new TitlesMenu("Reporte de instalación", "/reports/installationReport"),
   new TitlesMenu("Reporte de bodega", "/reports/wineryReport"),
-  new TitlesMenu("Balance de inventarios", "/reports/inventaryBalance")
+  new TitlesMenu("Balance de inventarios", "/reports/inventoryBalance")
 ];
 
-const principalTitles: TitlesMenu[] = [
+const principalTitles = [
   new TitlesMenu("Maestros", "/masters", subTitleMasters),
   new TitlesMenu("Terceros", "/thirds", subTitleThirds),
   new TitlesMenu("Items", "/items", subTitleItems),

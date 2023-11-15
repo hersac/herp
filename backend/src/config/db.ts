@@ -3,7 +3,7 @@ import { Sequelize } from "sequelize";
 const dbConfig = new Sequelize({
 	host: "localhost",
 	port: 5432,
-	database: "herp",
+	database: "app",
 	username: "heri",
 	password: "Heriberto1995**",
 	dialect: "postgres",

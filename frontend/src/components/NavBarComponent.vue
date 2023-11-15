@@ -6,7 +6,7 @@
         <BtnComponent
           :title="title.name"
           :route="title.route"
-          @get-click="getSubMenu(title.name, title.subtitle)"
+          @get-click="getSubMenu(title)"
         />
       </div>
     </v-toolbar>
@@ -23,17 +23,19 @@
 import { ref } from "vue";
 import BtnComponent from "@/components/BtnComponent.vue";
 import SubNavBarComponent from '../components/SubNavBarComponent.vue';
-import principalTitles from '../services/titlesService';
 import { TitlesMenu } from '../services/models/TitlesMenu';
+import principalTitles from '../services/titlesService';
 
 const titles = ref<TitlesMenu[] | undefined>([]);
 const titleSub = ref<string>();
-const subTitles = ref<Object[] | undefined | any>([]);
+const subTitles = ref<Object[] | undefined>([]);
 titles.value = principalTitles;
 
-const getSubMenu = (title: string, submenu: Object[]) => {
-  titleSub.value = title;
-  subTitles.value = submenu;
+const getSubMenu = (title: TitlesMenu) => {
+  titleSub.value = title.name;
+  subTitles.value = [];
+  subTitles.value = title.subtitle;
+  console.log(subTitles.value);
 };
 
 

@@ -97,7 +97,7 @@ const routes = [
         component: () => import('@/views/buy/Order.vue'),
       },
       {
-        path: 'entranceWinary',
+        path: 'entranceWinery',
         component: () => import('@/views/buy/EntranceWinery.vue'),
       },
     ]
@@ -155,7 +155,7 @@ const routes = [
         component: () => import('@/views/reports/CuteOffDate.vue'),
       },
       {
-        path: 'inventaryMove',
+        path: 'inventoryMove',
         component: () => import('@/views/reports/InventoryMove.vue'),
       },
       {
@@ -167,7 +167,7 @@ const routes = [
         component: () => import('@/views/reports/WineryReport.vue'),
       },
       {
-        path: 'inventaryBalance',
+        path: 'inventoryBalance',
         component: () => import('@/views/reports/InventoryBalance.vue'),
       },
     ]
