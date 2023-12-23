@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Parametros Instalacion</h2>
+    <h2>Parámetros de Instalación</h2>
   </div>
 </template>
 <script setup lang="ts">

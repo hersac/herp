@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Parametros de item</h2>
+    <h2>Parámetros de Item</h2>
   </div>
 </template>
 <script setup lang="ts">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Nota Debito</h2>
+    <h2>Nota Débito</h2>
   </div>
 </template>
 <script setup lang="ts">

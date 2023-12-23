@@ -115,7 +115,7 @@ const routes = [
         component: () => import('@/views/sale/CreditNote.vue'),
       },
       {
-        path: 'debiNote',
+        path: 'debitNote',
         component: () => import('@/views/sale/DebitNote.vue'),
       },
       {
@@ -176,7 +176,7 @@ const routes = [
     path: '/config',
     component: () => import('@/views/Config.vue'),
   },
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

@@ -8,7 +8,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-
 const classComponent = ref<string>();
 const titleComponent = ref<string>();
 const routeComponent = ref<string | undefined>();
@@ -22,6 +21,7 @@ const props = defineProps({
 const emits = defineEmits([
   "get-click"
 ])
+
 
 classComponent.value = props.class;
 titleComponent.value = props.title;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Consultas y reportes</h2>
+    <router-view />
   </div>
 </template>
 <script setup lang="ts">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Ventas</h2>
+    <router-view />
   </div>
 </template>
 <script setup lang="ts">

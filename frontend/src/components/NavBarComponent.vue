@@ -3,19 +3,12 @@
     <v-toolbar>
       <v-toolbar-title>Menu</v-toolbar-title>
       <div v-for="(title, index) in titles" :key="index">
-        <BtnComponent
-          :title="title.name"
-          :route="title.route"
-          @get-click="getSubMenu(title)"
-        />
+        <BtnComponent :title="title.name" :route="title.route" @get-click="getSubMenu(title)" />
       </div>
     </v-toolbar>
-      <div>
-        <SubNavBarComponent
-        :titlesecondnav="titleSub"
-        :subtitles="subTitles"
-        />
-      </div>
+    <div>
+      <SubNavBarComponent :titlesecondnav="titleSub" :subtitles="subTitles" />
+    </div>
   </div>
 </template>
 
@@ -31,12 +24,16 @@ const titleSub = ref<string>();
 const subTitles = ref<Object[] | undefined>([]);
 titles.value = principalTitles;
 
+
 const getSubMenu = (title: TitlesMenu) => {
   titleSub.value = title.name;
-  subTitles.value = [];
-  subTitles.value = title.subtitle;
-  console.log(subTitles.value);
-};
+  titles.value?.forEach(datos => {
+    if (datos.name == "Config") {
+      subTitles.value = datos.subtitle;
+    }
+  });
 
+  subTitles.value = title.subtitle;
+};
 
 </script>

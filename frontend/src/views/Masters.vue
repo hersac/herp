@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2>Maestros</h2>
+    <div>
+      <router-view />
+    </div>
   </div>
 </template>
 <script setup lang="ts">

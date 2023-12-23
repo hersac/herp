@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Pricios de venta</h2>
+    <h2>Precios de Venta</h2>
   </div>
 </template>
 <script setup lang="ts">

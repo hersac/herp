@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Factura proveedor</h2>
+    <h2>Factura Proveedor</h2>
   </div>
 </template>
 <script setup lang="ts">

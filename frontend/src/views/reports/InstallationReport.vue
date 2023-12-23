@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Reporte por instalacion</h2>
+    <h2>Reporte por Instalación</h2>
   </div>
 </template>
 <script setup lang="ts">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Ubicación</h2>
+    <h2>Parámetros de Ubicación</h2>
   </div>
 </template>
 <script setup lang="ts">

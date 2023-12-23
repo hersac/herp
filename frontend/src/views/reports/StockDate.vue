@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Existencias a la fecha</h2>
+    <h2>Existencias a la Fecha</h2>
   </div>
 </template>
 <script setup lang="ts">

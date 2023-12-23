@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Funcionarios</h2>
+    <h2>Parámetros de Funcionarios</h2>
 
   </div>
 </template>

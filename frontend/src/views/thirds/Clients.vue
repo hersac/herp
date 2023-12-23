@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Clientes</h2>
+    <h2>Parámetros de Clientes</h2>
   </div>
 </template>
 <script setup lang="ts">

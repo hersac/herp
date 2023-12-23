@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Parametros documentos</h2>
+    <h2>Parámetros de Documentos</h2>
   </div>
 </template>
 <script setup lang="ts">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Parametros Compañia</h2>
+    <h2>Parámetros de Compañía</h2>
   </div>
 </template>
 <script setup lang="ts">

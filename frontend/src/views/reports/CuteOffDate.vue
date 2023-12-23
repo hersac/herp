@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Existencias a un corte</h2>
+    <h2>Existencias a un Corte</h2>
   </div>
 </template>
 <script setup lang="ts">
