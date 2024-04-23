@@ -1,0 +1,21 @@
+@import '../styles.scss';
+
+.app {
+
+	&__navbar {
+		width: 100%;
+	}
+
+	&__content {
+		height: 90vh;
+		display: flex;
+
+		&__sidebar {
+
+		}
+
+		&__pages {
+
+		}
+	}
+}

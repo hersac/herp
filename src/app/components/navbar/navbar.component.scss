@@ -1,0 +1,56 @@
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 50px;
+	background-color: var(--color-primary) ;
+	color: var(--text-color-secundary);
+	box-shadow: 3px 8px 16px -7px rgba(0,0,0,0.75);
+
+	&__logo {
+
+	}
+
+	&__menu {
+
+		display: flex;
+		justify-content: space-evenly;
+
+
+		&__lista {
+			display: flex;
+			gap: 40px;
+			list-style: none;
+
+			&__option {
+				
+			}
+		}
+
+	}
+
+	&__account {
+
+		display: flex;
+		justify-content: space-evenly;
+		gap: 20px;
+
+		&__avatar {
+
+		}
+
+		&__logout {
+
+		}
+	}
+
+	& a {
+		color: var(--text-color-secundary);
+		text-decoration: none;
+	}
+
+	& a:hover {
+		color: var(--color-warning);
+		transition: all ease-in-out 0.2s;
+	}
+}
