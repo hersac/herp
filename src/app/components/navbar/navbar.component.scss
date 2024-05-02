@@ -3,12 +3,13 @@
 	justify-content: space-evenly;
 	align-items: center;
 	height: 50px;
-	background-color: var(--color-primary) ;
+	background-color: var(--color-primary);
 	color: var(--text-color-secundary);
-	box-shadow: 3px 8px 16px -7px rgba(0,0,0,0.75);
+	box-shadow: 3px 8px 16px -7px rgba(0, 0, 0, 0.75);
 
-	&__logo {
+	&__logo img {
 
+		width: 200px;
 	}
 
 	&__menu {
@@ -22,9 +23,7 @@
 			gap: 40px;
 			list-style: none;
 
-			&__option {
-				
-			}
+			&__option {}
 		}
 
 	}
@@ -37,11 +36,22 @@
 
 		&__avatar {
 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: solid #ffffff 0.1px;
+			border-radius: 50%;
+
+			& img {
+				width: 25px;
+				height: 25px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+
 		}
 
-		&__logout {
-
-		}
+		&__logout {}
 	}
 
 	& a {

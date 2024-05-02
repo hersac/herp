@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pages-layout',
+  selector: 'pages-layout',
   standalone: true,
   imports: [],
   templateUrl: './pages-layout.component.html',

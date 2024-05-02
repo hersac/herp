@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
+
+  @Input() dataUsuario: Object = {};
+  @Input() opciones: Object[] = [];
+
+  constructor(){
+
+  }
 
 }

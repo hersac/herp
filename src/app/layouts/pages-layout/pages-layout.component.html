@@ -1,1 +1,8 @@
-<p>pages-layout works!</p>
+<div class="pagina">
+	<div class="pagina__titulo">
+		<ng-content select="[titulo]"></ng-content>
+	</div>
+	<div class="pagina__contenido">
+		<ng-content select="[contenido]"></ng-content>
+	</div>
+</div>
