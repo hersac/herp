@@ -4,18 +4,13 @@
   </div>
   <div class="navbar__menu">
     <ul class="navbar__menu__lista">
+
+      @for(opcion of opciones; track opcion; let i = $index;) {
       <li class="navbar__menu__lista__option">
-        <a href="#">Home</a>
+        <a [href]="opcion.path">{{ opcion.name }}</a>
       </li>
-      <li class="navbar__menu__lista__option">
-        <a href="#">About</a>
-      </li>
-      <li class="navbar__menu__lista__option">
-        <a href="#">Services</a>
-      </li>
-      <li class="navbar__menu__lista__option">
-        <a href="#">contact</a>
-      </li>
+      }
+
     </ul>
   </div>
   <div class="navbar__account">

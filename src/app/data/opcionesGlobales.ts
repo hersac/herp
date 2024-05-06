@@ -1,4 +1,6 @@
-const menuBar: Object[] = [
+import { MenuOption } from "./menu-option";
+
+export const menuBar: MenuOption[] = [
     {
         name: 'Terceros',
         path: '/terceros'
@@ -23,4 +25,4 @@ const menuBar: Object[] = [
         name: 'Reportes',
         path: '/reportes'
     },
-]
+];
